@@ -4,3 +4,7 @@ on:
   push:
   schedule:
     - cron: '0 21 * * *'
+runs-on: ubuntu-latest
+steps:
+  - name: 'Checkout codes'
+    uses: actions/checkout@v1
